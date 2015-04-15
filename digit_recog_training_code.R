@@ -99,3 +99,9 @@ new_test3 = merge(test_label_frame3, sub_test3)
 train_model3_30 <- neuralnet(features, data = new_train3,hidden = 30,linear.output = FALSE)
 model_result3_30 <- compute(train_model3_30,new_test3[11:794])
 sum(round(model_result3_30$net.result) * new_test3[,1:10])/1000
+
+### using home desktop computer to run the third model, and it crunched
+# for a whole day and still not yet finished it. I finally stopped the process.
+# Although the computer has four-core cpu, the Rstudio only assign the process
+# to one of them, which is the main reason why it did not complete the task
+# even after a whole day.
